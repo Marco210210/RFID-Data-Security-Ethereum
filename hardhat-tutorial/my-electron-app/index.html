@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicurezza dei dati</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        #result:empty {
+            display: none;
+        }
+
+        #result:not(:empty) {
+            display: block;
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*  blocco spinner */
+        #spinner-svg {
+            width: 2.8em;
+            /* Riduci la larghezza dello spinner */
+            height: 2.8em;
+            /* Riduci l'altezza dello spinner */
+            margin-right: 10px;
+            /* Aggiungi margine a destra per separarlo dal bottone */
+            transform-origin: center;
+            animation: rotate4 2s linear infinite;
+        }
+
+        #spinner-svg circle {
+            fill: none;
+            stroke: hsl(214, 97%, 59%);
+            stroke-width: 3;
+            /* Riduci lo spessore della linea */
+            stroke-dasharray: 1, 100;
+            /* Modifica la lunghezza delle linee tratteggiate */
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            animation: dash4 1.5s ease-in-out infinite;
+        }
+
+        @keyframes rotate4 {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes dash4 {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+
+            50% {
+                stroke-dasharray: 90, 200;
+                stroke-dashoffset: -35px;
+            }
+
+            100% {
+                stroke-dashoffset: -125px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Deploy contratto</h1>
+
+    <!-- Aggiungi un input per inserire l'indirizzo del profilo -->
+    <label for="profileAddressInput">Profile Address:</label>
+    <input type="text" id="profileAddressInput">
+
+    <!-- Aggiungi un input per inserire la chiave privata -->
+    <label for="privateKeyInput">Private Key:</label>
+    <input type="text" id="privateKeyInput">
+    <div class="button-wrapper">
+        <!-- Aggiungi un bottone per salvare l'indirizzo del profilo e la chiave privata -->
+        <button id="saveAccountButton">Compila la deploy</button>
+
+        <div class="button-wrapper">
+            <!-- Aggiorna il codice HTML per il nuovo spinner -->
+            <div id="spinner-svg" style="display: none;">
+                <svg viewBox="25 25 50 50">
+                    <circle r="15" cy="50" cx="50"></circle> <!-- Riduci il raggio del cerchio -->
+                </svg>
+            </div>
+
+            <!-- Aggiungi un bottone per avviare la deploy del contratto -->
+            <button id="deployContractButton" style="display: none;" onclick="deployContract()">Esegui la deploy del
+                contratto</button>            
+        </div>
+    </div>
+    <div class="button-wrapper">
+        <button id="openCercaEsistenteButton" onclick="openCercaEsistente()">Cerca in contratto esistente</button>
+    </div>
+    <div id="result"></div>
+
+    <div class="button-wrapper">
+        <button id="openInteragisciButton" style="display: none;" onclick="openInteragisci()">Inserisci
+            elementi</button>
+        <!-- Nuovo: Aggiungi un bottone per aprire la finestra di ricerca -->
+        <button id="openCercaButton" style="display: none;" onclick="openCerca()">Cerca elementi</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const resultDiv = document.getElementById('result');
+            const profileAddressInput = document.getElementById('profileAddressInput');
+            const privateKeyInput = document.getElementById('privateKeyInput');
+            const saveAccountButton = document.getElementById('saveAccountButton');
+            const deployContractButton = document.getElementById('deployContractButton');
+            const spinner = document.getElementById('spinner-svg');
+
+            window.updateContractAddress = function (address) {
+                // Nascondi lo spinner quando il risultato è pronto
+                spinner.style.display = 'none';
+                resultDiv.innerHTML = `Indirizzo del contratto:<br>${address}`;
+            };
+
+            // Aggiungi questa parte per gestire il salvataggio dell'indirizzo del profilo e della chiave privata
+            if (saveAccountButton) {
+                saveAccountButton.addEventListener('click', function () {
+                    // Chiamata alla funzione esposta da Electron per salvare l'indirizzo del profilo
+                    window.electron.saveProfileAddress(profileAddressInput.value);
+
+                    // Chiamata alla funzione esposta da Electron per salvare la chiave privata
+                    window.electron.savePrivateKey(privateKeyInput.value);
+
+                    // Nascondi il box dei risultati
+                    resultDiv.innerHTML = '';
+
+                    // Nascondi i bottoni "Vai ad Interagisci" e "Cerca contratto"
+                    document.getElementById('openInteragisciButton').style.display = 'none';
+                    document.getElementById('openCercaButton').style.display = 'none';
+
+                    // Abilita il bottone di deploy dopo aver salvato l'indirizzo del profilo e la chiave privata
+                    deployContractButton.style.display = 'block';
+                });
+            }
+
+            // Aggiungi questa parte per gestire la deploy del contratto
+            if (deployContractButton) {
+                deployContractButton.addEventListener('click', function () {
+                    spinner.style.display = 'block';
+                    // Chiamata alla funzione esposta da Electron per avviare la deploy del contratto
+                    window.electron.deployContract();
+                });
+            }
+
+            window.openInteragisci = function () {
+                // Chiamata alla funzione esposta da Electron per aprire la finestra di interazione
+                window.electron.openInteragisciWindow();
+            };
+
+            window.openCerca = function () {
+                // Chiamata alla funzione esposta da Electron per aprire la finestra di ricerca
+                window.electron.openCercaWindow();
+            };
+
+            window.openCercaEsistente = function () {
+                // Chiamata alla funzione esposta da Electron per aprire la finestra di ricerca esistente
+                window.electron.openCercaEsistenteWindow();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicurezza dei dati-cerca</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #outputMessage {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cerca elementi</h1>
+
+    <!-- Aggiungi un input per inserire la tipologia del contratto -->
+    <label for="tipologiaContrattoInput">Tipologia elemento:</label>
+    <input type="text" id="tipologiaContrattoInput">
+
+    <!-- Aggiungi un bottone per eseguire la ricerca -->
+    <button id="cercaContrattoButton" onclick="cercaContratto()">Ricerca elemento</button>
+
+    <!-- Aggiungi un div per mostrare il messaggio di output -->
+    <div id="outputMessage"></div>
+
+    <script>
+        function cercaContratto() {
+            const tipologiaContratto = document.getElementById('tipologiaContrattoInput').value;
+
+            // Chiamata alla funzione esposta da Electron per eseguire la ricerca del contratto
+            window.electron.cercaContratto(tipologiaContratto);
+
+            // Mostra il box outputMessage
+            document.getElementById('outputMessage').style.display = 'block';
+
+            // Aggiorna il messaggio di output quando la ricerca è completata
+            setInterval(updateOutputMessage, 1000);
+        }
+
+        async function updateOutputMessage() {
+            try {
+                const response = await fetch('outcerca.json');
+                const data = await response.json();
+                const outputMessageDiv = document.getElementById('outputMessage');
+
+                // Pulisce il contenuto del div prima di aggiornarlo
+                outputMessageDiv.innerHTML = '';
+
+                // Aggiorna il div con il messaggio proveniente dal file outcerca.json
+                if (data.message) {
+                    outputMessageDiv.innerText = data.message;
+                }
+
+                if (data.results) {
+                    const resultList = document.createElement('ul');
+
+                    // Calcola il numero totale di risultati
+                    const totalResults = data.results.length;
+
+                    data.results.forEach((result, index) => {
+                        const listItem = document.createElement('li');
+                        listItem.innerText = `RFID: ${result.rfid}\nDescrizione: ${result.data}`;
+                        resultList.appendChild(listItem);
+
+                        if (index < totalResults - 1) {
+                            const lineBreak = document.createElement('br');
+                            resultList.appendChild(lineBreak);
+                        }
+                    });
+
+                    outputMessageDiv.appendChild(resultList);
+                }
+            } catch (error) {
+                console.error('Errore durante l\'aggiornamento del messaggio di output:', error.message);
+            }
+        }
+    </script>
+</body>
+
+</html>
