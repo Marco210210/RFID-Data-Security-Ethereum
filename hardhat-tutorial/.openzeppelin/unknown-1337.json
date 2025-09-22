@@ -1,0 +1,817 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x1e703384978310Aa3EFb4Ad47D77297Ab8596433",
+      "txHash": "0xf01d7c9e284f04a44b9d6e0457100fb42a43bbbfcdeb599c885ea58ff4ab7a7e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xC9B7954535444ed8Fd5569be0C02AD4B07547BA3",
+      "txHash": "0x30c98c359caf3802537a669ed72dd1e83104029179edc22b0f62ccb2a6d7723b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x7C1d2f3454EE1c889Cd73872D88E9bF207C2AE91",
+      "txHash": "0x38586b8589e7c89a145a11c6cf802fda33b0d45412dfbc726ff4cf7e27f34d1b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0B6F90EB2B24511Ff4E615dF39BD5e503f69E5Bc",
+      "txHash": "0xfcd713ac711caea95fb8dd227caac577ed95a24bcfcc55a94ce70fc91778e3d5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xfAE11a4d381f9b78a4F67615b5B4802522e94a27",
+      "txHash": "0x4bac3a3e15c625cfe1b652f37b838a94f4cdc3f744fd5d5cff8f79ceef57e454",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x73F2Ea315355851da403dE77e8B9a7B723c3baa6",
+      "txHash": "0x620a22e5a8bde66aff5ad160935370604d4d46741a6669a05146530f1ddb20de",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xf9f25C34c9455007A550A32e13a0188de632Db8C",
+      "txHash": "0xafd24a44e76161041c4b91ef39fdddbda35db0b38586c28c41e6d871c6e77588",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1595C9c7049610e83fa1391FA93034c31c32529d",
+      "txHash": "0x4cb9f609a902ee33f3e4b99f8c46193fe331c14de07a31534616e9f89210f20f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x79885002009B6683d06C533Ac1Bf12172601ED44",
+      "txHash": "0xde681995a2ecfba05c87a6513c69cd586bb49b1d07e460c855af9513b15f0993",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xce2ED5FCB8Fd5788C34EADa494a3E209F5502BEB",
+      "txHash": "0x0f1212578e10d40f63afc4c44760e66764c52c90b63efa97f29afd6b952e86c5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x28253aDc17c6269C31a8545Db37F3BA9A77da15e",
+      "txHash": "0x678f3ecf9892d97a9a19ad52400000c55b0b804284db3fa3ffeb6004118717d1",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xF497b3e0A712FcF6aB32270B00bBFd25f1Ae67A6",
+      "txHash": "0x031504d3c1fb37af1b9894360380096c8c7d9e2818324c8e900c8729849d1a53",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3b16e23dB84ac9C3e482C3605fbF1301cb054F3B",
+      "txHash": "0x6f68c57b1303873b43dd3f7452def38e1e23ec6eed66055983f447ce1c674a10",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x96de39E5943d66Fc534dcCC511A3Feef5ac32a8C",
+      "txHash": "0x0fb5cece06c053215eb54836bb1ac2e76d06fbc35d01654c1e023a35d0b2bf74",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3fffb22FE5E72C3669F3c44C4FEaeD6f83D33d43",
+      "txHash": "0xe3648f11a564d3d9aafa9188451853daad461f3a99e5d3f4690510e27b2c1941",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xAC3f6D315aecbfC0Fc1C68C01A8C2830d961A6Ce",
+      "txHash": "0x239e9704aef604e7797c47bdebee89be92c1d98290059b8fefc62524bf8d6e48",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xCcC753cF9B041e2e22562947C772523568f5bAf2",
+      "txHash": "0xd58280a104db9c2d365fccd60c3c5900dbd3e1c302bdd3c32d7b892adcc9133c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xbF6EE264AA2e9DeBC57644f2202b18407a8C4dE9",
+      "txHash": "0x96f5a8afeeec995bdefac4211fe00a08ec8aed542cf9c778404722c90e13dfed",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9E9143D07CF847e594Ee2D1725266d5123b5816F",
+      "txHash": "0xca3409e790cb460e1afc9541f33e4efad095542e08a2dad5dd20d3f0ab2be33f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc099b28BC05A6397b3Af26fb3d4929ca32E77e47",
+      "txHash": "0x739a1c9d6a94527472fbc2eb716f15a330b435a8a2e04b4123c5eceef23041e6",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2D4ef248D92AAFa94321576440d8FBcCEFFcCD67",
+      "txHash": "0xd62e030e0a828efa0f7eefa68379616576ba7a40a9cedb3e20723009629bdeee",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xDd7303073f16f46E80CDf62998b42bb5B9dfbc80",
+      "txHash": "0xc605915b81aabef534a30ba4266b975a3760489faf3596e03a374d160fec957e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xCc723C1A8781EA701501959102cc7F81709fa27E",
+      "txHash": "0x822995926e0dfa75c2d3b7805ea5595956e8686046602d303cbb99327dde939d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4240eBEE5Aa3dC95689749d6383f1a9174Af2531",
+      "txHash": "0x4a2ad597e9167c61d847da5f2b36b6075095b2c228dded60765aca6c8a6a794e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x21b5999957b48a2684686728E0E64113c879cb4c",
+      "txHash": "0x14d4ba28869b97ba7305b228afdca10bcb7f45f610a22b05888ee715e8b73a43",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x25A6A5Fe010cBe8794005c5d3FdcC5b39ab6c213",
+      "txHash": "0x4aec4c7dc203947094a8a71ae9cdaae37ff5ff00130853cd1c66fe5bb05afd08",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6A78b29EA96F5781716D93a13A5DaB8d1Fc59818",
+      "txHash": "0x4d4f196f505e408898b74a879aab9ea0c0a0e88c2c5616b01dc0e623536511f5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA016883d36908204e21584686c11CD121F6b220E",
+      "txHash": "0x7e83fedc47cb15c33c9bc8ca11e0a12986f5f7564778df684647d09f400d3253",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x11cc1613974b5bdC273EA81A24a30Be531031205",
+      "txHash": "0x508ce53c95d8b36d26a0574ab3b387ade25216da4750687150eb5f29f20008ee",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3A4d175EEb7060A5c98C1265AbA710b9AF2C5322",
+      "txHash": "0x1b919bf058c44ab83dced8583976b5b045d6f9d86efb06cd3321230bac9ffeb4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x40ba62c1B0944e9f7Bb0Af2745415Bd11B181075",
+      "txHash": "0xc4f4e83242ad71e509a5c23202ce47fd131568b4e66142d0a1db37226bcfc5b3",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6363582b50514f8783fDA3E572e752daeC8DaF08",
+      "txHash": "0x64ddd09f3ff7d36a549ee3d5a87d41910d2ad65d1b65268413d6bc3a9e3f615c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4349539a641E1E4f1e89CD041B9f5DD35ec46cbF",
+      "txHash": "0x82720ede5b0ed0b45546cb18cd87916a8ab9feed92c5f6d49f91781c4c998351",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xF51C12E90d1c472351E682e3299CfCf4893a0FB0",
+      "txHash": "0x261fb7d37743f9a40b18b18b52c585363946b9fb21ddddc8c4771e13673b1383",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1Ef9Bb17C2500d0B1fD3D95e236A15c04aEB063c",
+      "txHash": "0xa4e5cd2bebb8fa293b792be5ccb202e34f70456984b09d1b4a82781da4507919",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x57726620fC000c6FA9a8E3bdBA81bB9D05FbA20F",
+      "txHash": "0x5641d985380b374f2d7656996457486789c7d48c63049bbe264b8b94c851a792",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xabc2983dE7D92Db96Be1B49B0366Aec827aBD634",
+      "txHash": "0x73f505f6f4978c9ca73388c2c6eabb4786d5799371d8611bb424dca07c60387d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA4d60635cd3AdDde1f78a24Aef0f6c525B1580Fc",
+      "txHash": "0x727e6944280f3c69f6ed0d4aab7d8084ecb7c7d1a143f9b861f55222f4bd78f4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc0A6758CE791A5E57630e54b611AFFe26062d0DA",
+      "txHash": "0xc6242461d9c2d92e62fa32a714a8a2603f56fdcfffb8be2a647eb800a62825d9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x43296A078bc0020EED30a1F9D37B223171952109",
+      "txHash": "0x3987694e19ab23c166ec29bcd212a74465d1c8d3b788371196698b098603662b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc75d15f4AA4765F0E5C62FEb92d6B624A9524Eb9",
+      "txHash": "0x0c82b68e69b83ca989c6e3bc3a8983165f5fcd66dd925b21a23f3bf173c73076",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1019337844571e94b8643C14396EaCcD852bA37D",
+      "txHash": "0xcebc96dc562242496d0bb2ec2bc5fd96efa3e6adaf031cd19496fb591a23869a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x14dA20b82E715eCc2bee3429a13FF4B930254cE7",
+      "txHash": "0xbe2004048676708d3eab7598adc5f49559bbb7b0bce9257ce00338e886a458f6",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x08B8e940b670Bd0B46C75e1c6c0F0Fe04460d22a",
+      "txHash": "0xa279cd91b75e2706c64799d3a553d86d3b8e7cc2387657c486d62becf6883b74",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4815aE6Fd4266b5000E0FCaCb9aecB1171eA0317",
+      "txHash": "0xa1b00cfa20800df05540a99ce669dfbebe03be1be881dfa668348330d65ca81f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6Db46EBAd002Fe737325267D7EF71DA69CB9b18E",
+      "txHash": "0x277bdf38e87400519313c8f76bd15543567357a7ca14ae678ea8788d435f56f3",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "855333b65c707c178e6ca8693b59a9a1808d96f7cb4799bb56c8c403eb9971d3": {
+      "address": "0x4E908228f106395b07D620Dc1cE2BDCfe688D5aF",
+      "txHash": "0x35342b1a4ea01e03d00ca0b23e86f2e2d7f48a957268b2418035c5d7a2c6d6dd",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:6"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "c8ee8a5df7defd815574cdad4b10052800409d5299b1ee66dd73ca684bac009e": {
+      "address": "0xc5ab41AEd2F240dac13b4e72Be255Eb11E57E078",
+      "txHash": "0x351d239354c535ec6737cbfe80e6d9724be8900fb58bf04de90aed500fcb7767",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:8"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)10_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "c2df8814c79fbf291dc4977e0e3ceb513d42b2975cba10e2d7f15cc0997899cf": {
+      "address": "0x09737B8Ab64a4Ff9b162f4bbcB08Dbcb2373f75d",
+      "txHash": "0xc725d98d315feceb0c191cabfde9de08bdc26dbd33d097c930a2465495ace8c8",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:8"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)10_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "838b83875866632e7d855a987a067c882858cce39c622389eb6cd32c0f2f446d": {
+      "address": "0xF47642bE36aC1bd3A3435EFC86B57d95fC36B766",
+      "txHash": "0x0cd0eac612b9b62e34b9d10b306f5eb01f1f86610670ac090ce15ba122946a74",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidToContractData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:7"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)10_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "29a31789012977c0ff696ef2f138ae19c958c40ba972b298a3c37321af4e6f1b": {
+      "address": "0x7445E17Bf1Ac48E8aD4E80Fb79D411aBddf64875",
+      "txHash": "0x52fa440fa873946acdad124887bf5edf9d7c6acda023df7751efa7b1b4225cf6",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidToContractData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)64_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "85b7d7bb7f32d110f8d351d9d88a7744ed125be7777707fbdc39a57e0e99d3a6": {
+      "address": "0xd3188E1475d1533c9A390a0E3584Cb6F5C4C38a0",
+      "txHash": "0x18125ebd38a19be6cc69193a4e6dfdde919698b8e60266ad01552ed1d7d05556",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidToContractData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:9"
+          },
+          {
+            "label": "rfidToType",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:11"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)64_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "1bb4c94b12eccc9ad797e266dd80349f6daac7947e38ea5012d634c35979b41b": {
+      "address": "0x3e83f5bB365Fb4c1328ea500b646aDc859536Cd9",
+      "txHash": "0x25309d5782796ea0958693fc1fa59b9d2f837255f9a721ad2a85459782376f6c",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "rfidToContractData",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:8"
+          },
+          {
+            "label": "rfidToType",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:9"
+          },
+          {
+            "label": "typeToRfids",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "MockOracle",
+            "src": "contracts\\MockOracle.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)64_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

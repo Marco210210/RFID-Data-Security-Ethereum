@@ -1,0 +1,15 @@
+const { expect } = require("chai");
+const { ethers } = require("hardhat");
+
+describe("MyNFT", function () {
+  it("Dovrebbe coniare un NFT", async function () {
+    const MyNFT = await ethers.getContractFactory("MyNFT");
+    const myNFT = await MyNFT.deploy();
+    await myNFT.deployed();
+
+    const mintTx = await myNFT.mintNFT("indirizzo_destinatario", "token_uri");
+    await mintTx.wait();
+
+    expect(await myNFT.nextTokenId()).to.equal(1);
+  });
+});
