@@ -33,9 +33,8 @@ The goal of this project is to track items using RFID technology and store relat
 
 ```
 RFID-Ethereum-Tracking/
-├── arduino/                  → Arduino code and communication files
-│   ├── Arduino.txt            → Main Arduino code with MFRC522
-│   └── ...                    → Other files for communication with Arduino
+├── Arduino/                  → Arduino code and communication files
+│   └── Arduino.ino            → Main Arduino code with MFRC522
 │
 ├── hardhat-tutorial/         → Ethereum smart contract and interaction files
 │   ├── server.js              → Server to handle RFID data
@@ -48,6 +47,8 @@ RFID-Ethereum-Tracking/
 │
 ├── README.md                 → Project documentation
 └── .gitignore                → Git ignore file (to be added)
+
+⚠️ Note: Some folders (e.g. node_modules/, my-electron-app/node_modules) are excluded from version control. Make sure to run npm install after cloning.
 
 ```
 
